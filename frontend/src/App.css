@@ -1,0 +1,61 @@
+.data-table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.data-table thead {
+    background-color: #f4f4f4;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.data-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+    }
+}
+
+.ant-btn-default:disabled {
+    background-color: white;
+}
+
+.ant-btn:disabled,
+.ant-btn[disabled] {
+    background-color: #e6e6e6 !important;
+    /* Light gray background */
+    color: #a6a6a6 !important;
+    /* Lighter text color */
+    border-color: #d9d9d9 !important;
+    /* Light border color */
+    cursor: not-allowed !important;
+    opacity: 1 !important;
+    /* Make sure the button colors aren't faded */
+}
